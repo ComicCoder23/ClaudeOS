@@ -1,0 +1,20 @@
+# Secrets
+.env
+*.env
+
+# Node
+node_modules/
+
+# Generated output (images, captions — too large for git)
+csd-engine/output/
+nanobanana-output/
+
+# Playwright session data
+.playwright-mcp/
+
+# Claude local settings
+.claude/settings.local.json
+
+# OS
+Thumbs.db
+.DS_Store
