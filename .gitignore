@@ -15,6 +15,9 @@ nanobanana-output/
 # Claude local settings
 .claude/settings.local.json
 
+# Runtime logs
+logs/
+
 # OS
 Thumbs.db
 .DS_Store
