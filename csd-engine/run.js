@@ -186,9 +186,10 @@ async function main() {
     const cleanPrompt = promptText.replace(/"/g, "'").replace(/\n/g, ' ')
     const cmd = 'gemini --yolo "/generate ' + cleanPrompt + '"'
     execSync(cmd, {
-      stdio: 'inherit',
-      cwd: path.join(require('os').homedir(), 'ClaudeOS'),
-      shell: true
+      stdio: 'pipe',
+      cwd: require('os').homedir(),
+      shell: true,
+      timeout: 90000
     })
     imageGenerated = true
 

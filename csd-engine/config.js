@@ -39,7 +39,7 @@ const config = {
   // --- Output paths ---
   // Local: ~/ClaudeOS/csd-engine/output/YYYY/MM/
   // Canonical filename: CSD-{TYPE}-{YYYY}-{MM}-{DD}.png
-  OUTPUT_BASE: path.join(os.homedir(), 'ClaudeOS', 'csd-engine', 'output'),
+  OUTPUT_BASE: path.join(__dirname, 'output'),
 
   getFilename(type, ext) {
     ext = ext || 'png'

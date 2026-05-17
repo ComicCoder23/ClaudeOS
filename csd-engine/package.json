@@ -1,0 +1,14 @@
+{
+  "name": "csd-engine",
+  "version": "2.0.0",
+  "description": "Choosing Sobriety Daily post engine",
+  "main": "run.js",
+  "scripts": {
+    "morning": "node run.js morning",
+    "midday": "node run.js midday",
+    "night": "node run.js night"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
